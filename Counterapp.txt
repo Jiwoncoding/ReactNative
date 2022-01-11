@@ -1,0 +1,28 @@
+< 터미널에서 설치>
+1. npm config set save-exact=true           : 노드 패키지를 통해 설치하는 라이브러리, 모듈들의 버전을 고정
+2. npm install typescript @types/react @types/react-native
+3. npm install typescript @types/react @types/react-native --save-dev
+4. react-native init _____  --template typescript
+5. npm install --save styled-components --legacy-peer-deps
+6. npm install --save-dev @types/styled-components
+7. npm install --save-dev babel-plugin-root-import
+
+
+< 아이콘 > 머터리얼 디자인 사이트
+
+< Props, State(상태) >
+1. Props는 부모에서 자식으로 데이터를 넘겨준다.
+2. @2x, @3x 이미지 파일 이름의 규칙
+3. 함수형 컴포넌트에서 state를 사용하기 위해서 리액트 훅의 useState를 사용
+4. const [count, setCount] = useState<number>(initValue);
+          count : 불변값, setCount : 변수변경 set함수
+                              setCount(count+1)
+                              setCount(count-1)
+5. 독립된 모듈 component에서 state를 사용하기 위해서는 useState를 사용해야 하며, 값을 변경하기 위해서는 set함수를 사용해야 한다.
+   const [변수명,변수를 변경할 set함수] = useState<state타입>(초기값);
+
+<typescript>
+1. interface Props {}
+2. : 필수 항목
+3. ?: 필수 항목 X 
+4. require는 HTML의 image태그와 같은 역할
